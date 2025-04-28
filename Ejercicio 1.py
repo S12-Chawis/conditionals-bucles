@@ -1,13 +1,13 @@
 '''Ejercicio 1: Clasificador de números Escribe un programa que pida al usuario un número entero y determine si es positivo, negativo o cero.'''
 
-while True:
+while True:   #Se pide el numero entero
     try:
         num = int(input('Ingresa un numero entero unicamente:'))
         break
     except Exception as e:
         print('Error', e)
         
-if num < 0:
+if num < 0:  #Se valida si es positivo, negativo o cero
     print(f'El numero {num} es negativo')
 elif num > 0:
     print(f'El numero {num} es positivo')
